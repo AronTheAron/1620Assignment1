@@ -5,6 +5,14 @@ body {
     src: url(https://fonts.google.com/specimen/Lato)
 }
 
+.darkmode {
+  background-color: #18122B;
+  color: #F3E9DE;
+}
+.darkmode > .mynotes {
+  background-color: #393053;
+}
+
 @media only screen and (max-width: 600px) {
     .mynotes {
         height: 20%;
