@@ -1,150 +1,201 @@
 body {
-    background-color: #F3E9DE;
+    background-color: #f3e9de;
     color: #256993;
-    font-family: 'Lato', sans-serif;
-    src: url(https://fonts.google.com/specimen/Lato)
-}
-
-.darkmode {
-  background-color: #18122B;
-  color: #F3E9DE;
-}
-.darkmode > .mynotes {
-  background-color: #393053;
-}
-
-@media only screen and (max-width: 600px) {
+    font-family: "Lato", sans-serif;
+    src: url(https://fonts.google.com/specimen/Lato);
+  }
+  
+  .darkmode {
+    background-color: #18122b;
+    color: #f3e9de;
+  }
+  .darkmode > .mynotes {
+    background-color: #393053;
+  }
+  
+  @media only screen and (max-width: 600px) {
     .mynotes {
-        height: 20%;
-        width: 100%;
-        position: sticky;
-        text-align: center;
-        top: 0;
-        left: 0;
-        background-color: #FAF4EC;
-        padding-top: 20px;
+      height: 20%;
+      width: 100%;
+      position: sticky;
+      text-align: center;
+      top: 0;
+      left: 0;
+      background-color: #faf4ec;
+      padding-top: 20px;
     }
-    
+  
     .noteslist {
-        display: inline-block;
-        text-align: left;
+      display: inline-block;
+      text-align: left;
     }
-    
+  
     .bigheader {
-        text-align: center;
-        font-size: 22px;
+      text-align: center;
+      font-size: 22px;
     }
-
+  
     .noteslist {
-    font-size: 20px;
+      font-size: 20px;
     }
-    
+  
     .main {
-        margin-top: 10%; 
-        padding: 0px 10px;
+      margin-top: 10%;
+      padding: 0px 10px;
     }
-    
+  
     .button {
-        border-radius: 12px;
-        border: none;
-        color: white;
-        padding: 15px;
-        text-align: center;
-        font-size: 13px;
-        cursor: pointer;
+      border-radius: 12px;
+      border: none;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 13px;
+      cursor: pointer;
     }
-    
-    .newnote {background-color: #375F68; float: left; margin-bottom: 10px; width: 48%;}
-    .darktheme {background-color: #56536A; float: right; margin-bottom: 10px; width: 48%;}
-    .save {background-color: #375F68; float: left; margin-top: 10px; width: 48%;}
-    .cancel {background-color: #9B332C; float: right; margin-top: 10px; width: 48%;}
-
+  
+    .newnote {
+      background-color: #375f68;
+      float: left;
+      margin-bottom: 10px;
+      width: 48%;
+    }
+    .darktheme {
+      background-color: #56536a;
+      float: right;
+      margin-bottom: 10px;
+      width: 48%;
+    }
+    .save {
+      background-color: #375f68;
+      float: left;
+      margin-top: 10px;
+      width: 48%;
+    }
+    .cancel {
+      background-color: #9b332c;
+      float: right;
+      margin-top: 10px;
+      width: 48%;
+    }
+  
     .notearea {
-        width: 100%;
-        height: 150px;
-        padding: 14px;
-        box-sizing: border-box;
-        border: 4px solid cornflowerblue;
-        border-radius: 4px;
-        background-color: #FAF4EC;
-        font-size: 16px;  
-        resize: none;
+      width: 100%;
+      height: 150px;
+      padding: 14px;
+      box-sizing: border-box;
+      border: 4px solid cornflowerblue;
+      border-radius: 4px;
+      background-color: #faf4ec;
+      font-size: 16px;
+      resize: none;
     }
-
-    a:link {color: #256993;}
-    a:visited {color: #9B332C;}
-    .possiblelink {float: right;}
-
+  
+    a:link {
+      color: #256993;
+    }
+    a:visited {
+      color: #9b332c;
+    }
+    .possiblelink {
+      float: right;
+    }
+  
     .atthebottom {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 30px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 30px;
     }
-}
-@media only screen and (min-width: 600px) {  
+  }
+  @media only screen and (min-width: 600px) {
     .mynotes {
-        height: 100%;
-        width: 20%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: #FAF4EC;
-        padding-top: 20px;
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #faf4ec;
+      padding-top: 20px;
     }
-    
+  
     .bigheader {
-        text-align: center;
-        font-size: 40px;
+      text-align: center;
+      font-size: 40px;
     }
-
+  
     .noteslist {
-    font-size: 24px;
+      font-size: 24px;
     }
-    
+  
     .main {
-        margin-left: 20%; 
-        padding: 0px 10px;
+      margin-left: 20%;
+      padding: 0px 10px;
     }
-    
+  
     .button {
-        border-radius: 12px;
-        border: none;
-        color: white;
-        padding: 20px;
-        text-align: center;
-        font-size: 16px;
-        cursor: pointer;
+      border-radius: 12px;
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      font-size: 16px;
+      cursor: pointer;
     }
-    
-    .newnote {background-color: #375F68; float: left; margin-bottom: 15px;}
-    .darktheme {background-color: #56536A; float: right; margin-bottom: 15px;}
-    .save {background-color: #375F68; float: right; margin-top: 15px; margin-right: 5px;}
-    .cancel {background-color: #9B332C; float: right; margin-top: 15px; margin-left: 5px;}
-
+  
+    .newnote {
+      background-color: #375f68;
+      float: left;
+      margin-bottom: 15px;
+    }
+    .darktheme {
+      background-color: #56536a;
+      float: right;
+      margin-bottom: 15px;
+    }
+    .save {
+      background-color: #375f68;
+      float: right;
+      margin-top: 15px;
+      margin-right: 5px;
+    }
+    .cancel {
+      background-color: #9b332c;
+      float: right;
+      margin-top: 15px;
+      margin-left: 5px;
+    }
+  
     .notearea {
-        width: 100%;
-        height: 150px;
-        padding: 14px;
-        box-sizing: border-box;
-        border: 4px solid cornflowerblue;
-        border-radius: 4px;
-        background-color: #FAF4EC;
-        font-size: 16px;  
-        resize: none;
+      width: 100%;
+      height: 150px;
+      padding: 14px;
+      box-sizing: border-box;
+      border: 4px solid cornflowerblue;
+      border-radius: 4px;
+      background-color: #faf4ec;
+      font-size: 16px;
+      resize: none;
     }
-
-    a:link {color: #256993;}
-    a:visited {color: #9B332C;}
-    .possiblelink {float: right;}
-
+  
+    a:link {
+      color: #256993;
+    }
+    a:visited {
+      color: #9b332c;
+    }
+    .possiblelink {
+      float: right;
+    }
+  
     .atthebottom {
-    position: fixed;
-    bottom: 0;
-    margin-left: 20%;
-    width: 80%;
-    text-align: center;
-    padding-bottom: 30px;
+      position: fixed;
+      bottom: 0;
+      margin-left: 20%;
+      width: 80%;
+      text-align: center;
+      padding-bottom: 30px;
     }
-}
+  }
+  
