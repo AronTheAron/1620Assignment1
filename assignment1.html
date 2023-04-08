@@ -3,15 +3,14 @@
 
 <head>
   <link rel="stylesheet" href="css/stylesheet.css">
+  <script src="javascript.js"></script>
   <title>Aaron's Terrible Note Taker!</title>
 </head>
 
 <body>
   <div class="mynotes">
     <h1 class="bigheader">Your Notes</h1>
-    <ul class="noteslist">
-      <li>note one</li>
-      <li>note two</li>
+    <ul class="noteslist" id="noteslist">
     </ul>
   </div>
 
@@ -19,10 +18,10 @@
     <h1 class="bigheader">Take Better Notes!</h1>
     <a href="somethingaboutdocs.bleh" class="possiblelink">About Docs</a><br>
     <p></p>
-    <button class="button newnote" id='newnote' onclick='newnote()'>New Note</button>
-    <button class="button darktheme" onclick='darktoggle()'>Dark Theme</button>
+    <button class="button newnote" id='newnote'>New Note</button>
+    <button class="button darktheme" id='darkmode'>Dark Theme</button>
     <textarea class="notearea" id='notearea' rows="10">Insert your notes here!</textarea>
-    <button class="button cancel" id='cancel' onclick='cancel()'>Cancel</button>
+    <button class="button cancel" id='cancel'>Cancel</button>
     <button class="button save" id='save'>Save</button>
   </div>
   <footer class="atthebottom">
@@ -31,4 +30,5 @@
     <a href="secondlink.bleh"><img src="images/Internet_Line-02-512.webp" alt="Link to other something" style="width:30px;height:30px;"></a>
   </footer>
 </body>
+
 </html>

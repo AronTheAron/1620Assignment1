@@ -1,201 +1,223 @@
 body {
-    background-color: #f3e9de;
+  background-color: #f3e9de;
+  color: #256993;
+  font-family: "Lato", sans-serif;
+  src: url(https://fonts.google.com/specimen/Lato);
+}
+
+.darkmode {
+  background-color: #18122b;
+  color: #f3e9de;
+}
+.darkmode > .mynotes {
+  background-color: #393053;
+}
+
+ul > li > button {
+  background: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 12px;
+  color: inherit;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .mynotes {
+    height: 20%;
+    width: 100%;
+    position: sticky;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: #faf4ec;
+    padding-top: 20px;
+  }
+
+  .noteslist {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .bigheader {
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .noteslist {
+    font-size: 20px;
+  }
+
+  .main {
+    margin-top: 10%;
+    padding: 0px 10px;
+  }
+
+  .button {
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  .newnote {
+    background-color: #375f68;
+    float: left;
+    margin-bottom: 10px;
+    width: 48%;
+  }
+  .darktheme {
+    background-color: #56536a;
+    float: right;
+    margin-bottom: 10px;
+    width: 48%;
+  }
+  .save {
+    background-color: #375f68;
+    float: left;
+    margin-top: 10px;
+    width: 48%;
+  }
+  .cancel {
+    background-color: #9b332c;
+    float: right;
+    margin-top: 10px;
+    width: 48%;
+  }
+
+  .notearea {
+    width: 100%;
+    height: 150px;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 4px solid cornflowerblue;
+    border-radius: 4px;
+    background-color: #faf4ec;
+    font-size: 16px;
+    resize: none;
+  }
+
+  a:link {
     color: #256993;
-    font-family: "Lato", sans-serif;
-    src: url(https://fonts.google.com/specimen/Lato);
   }
-  
-  .darkmode {
-    background-color: #18122b;
-    color: #f3e9de;
+  a:visited {
+    color: #9b332c;
   }
-  .darkmode > .mynotes {
-    background-color: #393053;
+  .possiblelink {
+    float: right;
   }
-  
-  @media only screen and (max-width: 600px) {
-    .mynotes {
-      height: 20%;
-      width: 100%;
-      position: sticky;
-      text-align: center;
-      top: 0;
-      left: 0;
-      background-color: #faf4ec;
-      padding-top: 20px;
-    }
-  
-    .noteslist {
-      display: inline-block;
-      text-align: left;
-    }
-  
-    .bigheader {
-      text-align: center;
-      font-size: 22px;
-    }
-  
-    .noteslist {
-      font-size: 20px;
-    }
-  
-    .main {
-      margin-top: 10%;
-      padding: 0px 10px;
-    }
-  
-    .button {
-      border-radius: 12px;
-      border: none;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      font-size: 13px;
-      cursor: pointer;
-    }
-  
-    .newnote {
-      background-color: #375f68;
-      float: left;
-      margin-bottom: 10px;
-      width: 48%;
-    }
-    .darktheme {
-      background-color: #56536a;
-      float: right;
-      margin-bottom: 10px;
-      width: 48%;
-    }
-    .save {
-      background-color: #375f68;
-      float: left;
-      margin-top: 10px;
-      width: 48%;
-    }
-    .cancel {
-      background-color: #9b332c;
-      float: right;
-      margin-top: 10px;
-      width: 48%;
-    }
-  
-    .notearea {
-      width: 100%;
-      height: 150px;
-      padding: 14px;
-      box-sizing: border-box;
-      border: 4px solid cornflowerblue;
-      border-radius: 4px;
-      background-color: #faf4ec;
-      font-size: 16px;
-      resize: none;
-    }
-  
-    a:link {
-      color: #256993;
-    }
-    a:visited {
-      color: #9b332c;
-    }
-    .possiblelink {
-      float: right;
-    }
-  
-    .atthebottom {
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      text-align: center;
-      padding-bottom: 30px;
-    }
+
+  .atthebottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
   }
-  @media only screen and (min-width: 600px) {
-    .mynotes {
-      height: 100%;
-      width: 20%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #faf4ec;
-      padding-top: 20px;
-    }
-  
-    .bigheader {
-      text-align: center;
-      font-size: 40px;
-    }
-  
-    .noteslist {
-      font-size: 24px;
-    }
-  
-    .main {
-      margin-left: 20%;
-      padding: 0px 10px;
-    }
-  
-    .button {
-      border-radius: 12px;
-      border: none;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  
-    .newnote {
-      background-color: #375f68;
-      float: left;
-      margin-bottom: 15px;
-    }
-    .darktheme {
-      background-color: #56536a;
-      float: right;
-      margin-bottom: 15px;
-    }
-    .save {
-      background-color: #375f68;
-      float: right;
-      margin-top: 15px;
-      margin-right: 5px;
-    }
-    .cancel {
-      background-color: #9b332c;
-      float: right;
-      margin-top: 15px;
-      margin-left: 5px;
-    }
-  
-    .notearea {
-      width: 100%;
-      height: 150px;
-      padding: 14px;
-      box-sizing: border-box;
-      border: 4px solid cornflowerblue;
-      border-radius: 4px;
-      background-color: #faf4ec;
-      font-size: 16px;
-      resize: none;
-    }
-  
-    a:link {
-      color: #256993;
-    }
-    a:visited {
-      color: #9b332c;
-    }
-    .possiblelink {
-      float: right;
-    }
-  
-    .atthebottom {
-      position: fixed;
-      bottom: 0;
-      margin-left: 20%;
-      width: 80%;
-      text-align: center;
-      padding-bottom: 30px;
-    }
+}
+@media only screen and (min-width: 600px) {
+  .mynotes {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #faf4ec;
+    padding-top: 20px;
   }
-  
+
+  .bigheader {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .noteslist {
+    font-size: 24px;
+    width: 20%;
+  }
+
+  .main {
+    margin-left: 20%;
+    padding: 0px 10px;
+  }
+
+  .button {
+    border-radius: 12px;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .newnote {
+    background-color: #375f68;
+    float: left;
+    margin-bottom: 15px;
+  }
+  .darktheme {
+    background-color: #56536a;
+    float: right;
+    margin-bottom: 15px;
+  }
+  .save {
+    background-color: #375f68;
+    float: right;
+    margin-top: 15px;
+    margin-right: 5px;
+  }
+  .cancel {
+    background-color: #9b332c;
+    float: right;
+    margin-top: 15px;
+    margin-left: 5px;
+  }
+
+  #noteelement {
+    background: inherit;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .notearea {
+    width: 100%;
+    height: 150px;
+    padding: 14px;
+    box-sizing: border-box;
+    border: 4px solid cornflowerblue;
+    border-radius: 4px;
+    background-color: #faf4ec;
+    font-size: 16px;
+    resize: none;
+  }
+
+  a:link {
+    color: #256993;
+  }
+  a:visited {
+    color: #9b332c;
+  }
+  .possiblelink {
+    float: right;
+  }
+
+  .atthebottom {
+    position: fixed;
+    bottom: 0;
+    margin-left: 20%;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
